@@ -21,12 +21,12 @@ map.addControl(
         trackUserLocation: true
     })
 );
-// map.addControl(
-//     new MapboxDirections({
-//         accessToken: mapboxgl.accessToken
-//     }),
-//     "top-left"
-// );
+map.addControl(
+    new MapboxDirections({
+        accessToken: mapboxgl.accessToken
+    }),
+    "top-left"
+);
 
 var geojson = {
     type: 'FeatureCollection',
@@ -130,6 +130,56 @@ var geojson = {
             properties: {
                 title: 'Punto de reciclaje de aceite',
                 description: 'Achupallas 181'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-70.7401274, -33.4829671]
+            },
+            properties: {
+                title: 'Punto verde',
+                description: 'Avenida Santa Rosa 817'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-70.742458, -33.495617]
+            },
+            properties: {
+                title: 'Punto verde',
+                description: 'Tres Norte 1381'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-70.7520764, -33.5173033]
+            },
+            properties: {
+                title: 'Punto verde',
+                description: 'Elizabeth Heisse 531'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-70.7449454, -33.478362]
+            },
+            properties: {
+                title: 'Punto verde',
+                description: 'Av. Los Pajaritos 4760'
+            }
+        }, {
+            type: 'Feature',
+            geometry: {
+                type: 'Point',
+                coordinates: [-70.796093, -33.554232]
+            },
+            properties: {
+                title: 'Punto verde',
+                description: 'Parque Central Ote 100'
             }
         },
     ]
